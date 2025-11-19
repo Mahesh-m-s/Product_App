@@ -22,6 +22,7 @@ export default function NewProduct() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Add Product</Text>
+      
 
       {Object.keys(form).filter(k=>k!=="id").map((field) => (
         <TextInput
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
   title: { fontSize: 24, fontWeight: "bold", marginBottom: 20 },
   input: {
     borderWidth: 1,
-    padding: 10,
+    padding: 35,
     marginBottom: 12,
     borderRadius: 8,
   },

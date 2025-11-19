@@ -17,6 +17,7 @@ export default function ProductList() {
           <Link href={{ pathname: "/edit", params: item }} asChild>
             <TouchableOpacity style={styles.item}>
               <Text style={styles.name}>{item.name}</Text>
+              <Text style={styles.desc}>{item.description}</Text>
               <Text>₹ {item.price}</Text>
             </TouchableOpacity>
           </Link>
@@ -42,6 +43,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   name: { fontSize: 18, fontWeight: "600" },
+  desc: { fontSize: 20, fontWeight: "600" },
   addBtn: {
     backgroundColor: "black",
     padding: 15,

@@ -21,6 +21,8 @@ export default function EditProduct() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Edit Product</Text>
+      {/* <Text style={styles.disp}>{form.name}</Text> */}
+      {/* <Text style={styles.disp}>{form.description}</Text> */}
 
       <TextInput
         style={styles.input}
@@ -62,9 +64,14 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 12,
     borderRadius: 8,
+  },disp:{
+    borderWidth: 10,
+    padding: 25,
+    marginBottom: 12, 
+    borderColor:"red",
   },
   saveBtn: {
-    backgroundColor: "orange",
+    backgroundColor: "#FFA500",
     padding: 15,
     borderRadius: 8,
   },
